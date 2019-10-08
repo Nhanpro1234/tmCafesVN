@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+	<definition name="base-defintition" template="/WEB-INF/views/tiles/layout/default.jsp">
+		<put-attribute name="head" value="/WEB-INF/views/tiles/template/head.jsp" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/header.jsp" />
+		<put-attribute name="aside" value="/WEB-INF/views/tiles/template/aside.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/template/footer.jsp" />
+		<put-attribute name="js" value="/WEB-INF/views/tiles/template/js.jsp" />
+	</definition>
+	
+	<!-- trang-chu -->
+	<definition name="trang-chu" extends="base-defintition">
+		<put-attribute name="titles" value="Trang chủ" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/trang-chu.jsp" />
+	</definition>
+	
+	<!-- dang nhap -->
+	<definition name="dang-nhap" extends="base-defintition">
+		<put-attribute name="titles" value="Đăng nhập" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="aside" value="" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/dang-nhap.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	
+	<!-- so do ban -->
+	<definition name="so-do-ban" extends="base-defintition">
+		<put-attribute name="titles" value="Sơ đồ bàn" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/so-do-ban.jsp" />
+	</definition>
+	
+	<!-- chi tiet ban -->
+	<definition name="chi-tiet-ban" extends="base-defintition">
+		<put-attribute name="titles" value="Chi tiết bàn" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/chi-tiet-ban.jsp" />
+	</definition>
+	
+	<!-- danh muc -->
+	<definition name="danh-muc" extends="base-defintition">
+		<put-attribute name="titles" value="Danh mục" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/danh-muc.jsp" />
+	</definition>
+	
+	<!-- san pham -->
+	<definition name="san-pham" extends="base-defintition">
+		<put-attribute name="titles" value="Sản phẩm" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/san-pham.jsp" />
+	</definition>
+	
+	<!-- nhan vien -->
+	<definition name="nhan-vien" extends="base-defintition">
+		<put-attribute name="titles" value="Nhân viên" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/nhan-vien.jsp" />
+	</definition>
+	
+	<!-- san ban phong -->
+	<definition name="san-ban-phong" extends="base-defintition">
+		<put-attribute name="titles" value="Danh sách bàn, phòng" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/san-ban-phong.jsp" />
+	</definition>
+	
+	<!-- khach-hang -->
+	<definition name="khach-hang" extends="base-defintition">
+		<put-attribute name="titles" value="Khách hàng, nhà cung cấp" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/khach-hang.jsp" />
+	</definition>
+	
+	<!-- san ban phong -->
+	<definition name="tai-khoan" extends="base-defintition">
+		<put-attribute name="titles" value="Tài khoản" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/tai-khoan.jsp" />
+	</definition>
+	
+	<!-- san ban phong -->
+	<definition name="doanh-thu" extends="base-defintition">
+		<put-attribute name="titles" value="Doanh thu" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/doanh-thu.jsp" />
+	</definition>
+	
+</tiles-definitions>
